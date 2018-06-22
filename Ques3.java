@@ -20,7 +20,7 @@ class Printing
 	System.out.println("1. Integer");
 	System.out.println("2. Double");
 	System.out.println("3. Character");
-	System.out.println("4. String");
+	System.out.println("4. Float");
 	Scanner sc = new Scanner(System.in);
 	n = sc.nextInt();
 	
@@ -28,15 +28,15 @@ class Printing
 	{
 		Integer[] IntegerArray = {1,2,3,4,6,5,8,4,6,2,7,9,4};
 		int ia=IntegerArray.length;
-		System.out.println("Array IntegerArray contains:");
+		System.out.println("IntegerArray contains:");
 		printArray(IntegerArray,ia);
 	}
 	
 	else if(n==2)
 	{
-		Double[] DoubleArray = {1.4,3.7,8.3,9.6,7.4,2.6,4.5,4.6};
+		Double[] DoubleArray = {1.47,3.97,8.32,9.56,7.94,2.66,4.59,4.26};
 		int da=DoubleArray.length;
-		System.out.println("\nArray DoubleArray contains:");
+		System.out.println("DoubleArray contains:");
 		printArray(DoubleArray,da);
 	}
 	
@@ -44,15 +44,15 @@ class Printing
 	{
 		Character[] CharacterArray = {'a','b','e','t','W','Y','c','r'};
 		int ca=CharacterArray.length;
-		System.out.println("\nArray CharacterArray contains:");
+		System.out.println("CharacterArray contains:");
 		printArray(CharacterArray,ca);
 	}
 	else if(n==4)
 	{
-		String[] StringArray = {"apple","bat","fan","Ant","Eye","Axe","dog"};
-		int sa=StringArray.length;
-		System.out.println("\nArray StringArray contains:");
-		printArray(StringArray,sa);
+		Float[] FloatArray = {2.6f,1.5f,7.5f,3.5f,2.9f,5.7f,9.6f,3.9f};
+		int fa=FloatArray.length;
+		System.out.println("FloatArray contains:");
+		printArray(FloatArray,fa);
 	}
 	else
 	{
